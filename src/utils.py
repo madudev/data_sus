@@ -5,7 +5,7 @@ import logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 # Caminho para o arquivo TXT com dados dos municípios
-municip_txt_path = "dictionaries/municipios/municipio_codigos.txt"
+municip_txt_path = os.path.join(os.path.dirname(os.path.abspath(__file__)), "../dictionaries/municipios/municipio_codigos.txt")
 
 def criar_dicionario_municipios(dbf_path):
     """
